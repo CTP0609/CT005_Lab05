@@ -2,56 +2,174 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Lợi ích của công nghệ số</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CT005 - Lab05</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
+            margin: 0;
+            background-color: #f2f5f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
             padding: 30px;
         }
 
-        h1 {
-            text-align: center;
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         img {
-            max-width: 100%;
             display: block;
-            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 8px;
         }
 
         iframe {
             width: 100%;
-            height: 500px;
+            height: 450px;
             border: none;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Lợi ích của công nghệ số</h1>
+    <!-- Tiêu đề -->
+    <header>
+        <h1>CT005 - Lab05</h1>
+        <p>Quản lý phiên bản bằng Git/GitHub</p>
+    </header>
 
-    <h2>Infographic</h2>
+    <div class="container">
 
-    <img src="Lab05_Ex2.1.png" alt="Infographic công nghệ số">
+        <!-- Thông tin cá nhân -->
+        <div class="card info">
+            <h2>Thông tin cá nhân</h2>
 
-    <h2>Video</h2>
+            <p><strong>Họ tên:</strong> Ca_Thành_Phát</p>
+            <p><strong>MSSV:</strong> B2605369</p>
+            <p><strong>Lớp học phần:</strong> </p>
+        </div>
 
-    <iframe
-        src="https://www.youtube.com/watch?v=nx-5tRI5KXI"
-        allowfullscreen>
-    </iframe>
 
-    <p>
-        Nguồn tài liệu: Pexels, FreeSound (CC0).
-    </p>
+        <!-- Sản phẩm 1 -->
+        <div class="card">
+            <h2>1. Sản phẩm nhiệm vụ 1.2 - File PDF</h2>
 
-    <p>
-        Video tạo bởi CapCut.
-    </p>
+            <p>
+                Đây là sản phẩm PDF được thực hiện trong nhiệm vụ 1.2.
+            </p>
+
+            <a href="Lab05_Ex1.2.pdf" target="_blank">
+                📄 Xem file PDF
+            </a>
+        </div>
+
+
+        <!-- Sản phẩm 2 -->
+        <div class="card">
+            <h2>2. Sản phẩm nhiệm vụ 2.1 - File PNG</h2>
+
+            <p>
+                Đây là infographic được thực hiện trong nhiệm vụ 2.1.
+            </p>
+
+            <img src="Lab05_Ex2.1.png"
+                 alt="Infographic nhiệm vụ 2.1">
+        </div>
+
+
+        <!-- Sản phẩm 3 -->
+        <div class="card">
+            <h2>3. Sản phẩm nhiệm vụ 2.2 - Video</h2>
+
+            <p>
+                Video giới thiệu lợi ích của công nghệ số.
+            </p>
+
+            <iframe
+                src="https://www.youtube.com/watch?v=nx-5tRI5KXI"
+                title="Video công nghệ số"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+
+        <!-- Nguồn tài liệu -->
+        <div class="card">
+            <h2>Nguồn tài liệu</h2>
+
+            <p>
+                Hình ảnh/video sử dụng tài liệu miễn phí bản quyền từ
+                <strong>Pexels</strong>.
+            </p>
+
+            <p>
+                Âm thanh sử dụng từ <strong>FreeSound (CC0)</strong>.
+            </p>
+
+            <p>
+                Video được tạo bằng <strong>CapCut</strong>.
+            </p>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>CT005 - Lab05 | Git/GitHub</p>
+    </footer>
 
 </body>
 </html>
